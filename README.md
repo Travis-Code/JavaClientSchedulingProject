@@ -3,7 +3,7 @@ version(1)
 1/30/2022
 Intellij 2021.1.1 Community
 Java\JDK 11.0.11
-openjfx 11.0.2
+javafx 11.0.2
 mysql connector 8.0.25
 
 HOW TO:
