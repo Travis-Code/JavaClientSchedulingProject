@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportContactsController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="372.0" prefWidth="424.0" VBox.vgrow="ALWAYS">
+            <children>
+                <TableView fx:id="contactReportTable" layoutX="32.0" layoutY="111.0" prefHeight="200.0" prefWidth="576.0">
+                    <columns>
+                        <TableColumn fx:id="apptidcol" prefWidth="63.0" text="Appointment ID" />
+                        <TableColumn fx:id="titlecol" prefWidth="40.0" text="Title" />
+                        <TableColumn fx:id="typecol" prefWidth="53.0" text="Type" />
+                        <TableColumn fx:id="descriptioncol" prefWidth="85.0" text="Description" />
+                        <TableColumn fx:id="startcol" prefWidth="136.0" text="Start Date &amp; Time" />
+                        <TableColumn fx:id="endcol" prefWidth="107.0" text="End Date &amp; Time" />
+                        <TableColumn fx:id="customeridcol" prefWidth="91.0" text="Customer ID" />
+                    </columns>
+                </TableView>
+                <Text layoutX="344.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTACTS SCHEDULING REPORT">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Text>
+                <Button fx:id="backbutton" layoutX="274.0" layoutY="327.0" mnemonicParsing="false" onAction="#returnToReportScreenButtonHandler" text="BACK" AnchorPane.rightAnchor="320.0" />
+                <Text layoutX="118.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT CONTACT">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Text>
+                <ComboBox fx:id="contactbox" layoutX="238.0" layoutY="77.0" onAction="#contactComboBox" prefWidth="150.0" />
+                <Button fx:id="showresults" layoutX="411.0" layoutY="77.0" mnemonicParsing="false" onAction="#showresultsbutton" text="SHOW RESULT" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

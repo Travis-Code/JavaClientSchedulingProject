@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainScreenController">
+    <children>
+        <AnchorPane fx:id="mainscreen" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Button fx:id="customerButton" layoutX="61.0" layoutY="158.0" mnemonicParsing="false" onAction="#customerScreenButtonHandler" prefHeight="60.0" prefWidth="149.0" text="CUSTOMERS">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="appointmentButton" layoutX="249.0" layoutY="158.0" mnemonicParsing="false" onAction="#appointmentScreenButtonHandler" prefHeight="60.0" prefWidth="149.0" text="APPOINTMENTS">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Text layoutX="215.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT AN OPTION" wrappingWidth="216.92578125">
+                    <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                    </font>
+                </Text>
+                <Button fx:id="logoutButton" layoutX="277.0" layoutY="278.0" mnemonicParsing="false" onAction="#returnToLoginScreenHandler" text="LOGOUT" />
+                <Button fx:id="reportsButton" layoutX="438.0" layoutY="158.0" mnemonicParsing="false" onAction="#reportScreenButtonHandler" prefHeight="60.0" prefWidth="149.0" text="REPORTS">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Label layoutX="480.0" layoutY="14.0" text="Main Menu">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+    </children>
+</VBox>

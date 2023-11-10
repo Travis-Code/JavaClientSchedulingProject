@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="463.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField fx:id="userNameFieldID" layoutX="289.0" layoutY="177.0" onAction="#usernameboxfieldEventHandler" text="test" />
+            <TextField fx:id="passwordFieldID" layoutX="289.0" layoutY="250.0" onAction="#passwordboxFieldEventHandler" text="test" />
+            <Text fx:id="loginLabel" layoutX="308.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOG-IN PAGE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="usernameLabel" layoutX="287.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+            <Text fx:id="passwordLabel" layoutX="287.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+            <Text fx:id="zoneIDLabel" layoutX="343.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zone ID" />
+            <Button fx:id="submit" layoutX="335.0" layoutY="310.0" mnemonicParsing="false" onAction="#submitButtonHandler" text="SUBMIT" />
+            <Text fx:id="schedulingLabel" layoutX="200.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCHEDULING APPLICATION">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <Button fx:id="exit" layoutX="343.0" layoutY="348.0" mnemonicParsing="false" onAction="#exitButtonHandler" text="EXIT" />
+            <Label fx:id="showZoneLabel" contentDisplay="CENTER" layoutX="253.0" layoutY="416.0" prefHeight="25.0" prefWidth="222.0" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
