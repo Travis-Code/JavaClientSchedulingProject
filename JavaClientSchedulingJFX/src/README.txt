@@ -1,6 +1,4 @@
 Scheduling Application C195
-Travis Hipolito
-thipol2@wgu.edu
 version(1)
 1/30/2022
 Intellij 2021.1.1 Community
